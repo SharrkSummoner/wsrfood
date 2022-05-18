@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAEAEA"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/rectangle3" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="155dp"
+                        android:layout_height="155dp"
+                        android:foregroundGravity="top"
+                        android:scaleType="centerInside"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView6"
+                        app:srcCompat="@drawable/cooking2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23.06dp"
+                android:layout_marginRight="23.06dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="68.08dp"
+                    android:alpha="0.4"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="E-mail"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="9.01dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:hint="deliver@mail.ru"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:outlineAmbientShadowColor="#000000"
+                    android:outlineSpotShadowColor="#000000"
+                    android:shadowColor="#000000"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="37.04dp"
+                    android:alpha="0.4"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Password"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="9.01dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:hint="* * * * * * * * "
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="53.06dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:onClick="forgot_pass"
+                    android:text="Forgot password?"
+                    android:textColor=" #FA4A0C"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="316sp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30.26dp"
+                    android:background="@drawable/cornen_radius"
+                    android:backgroundTint="#FA4A0C"
+                    android:fontFamily="@font/nunito_sans"
+                    android:onClick="login"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
