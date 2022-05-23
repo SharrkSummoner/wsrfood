@@ -46,12 +46,13 @@
             android:textSize="48sp" />
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="match_parent"
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ellipse16" />
+            app:srcCompat="@drawable/launch_activity_load_ellips"
+            android:adjustViewBounds="true"/>
 
     </LinearLayout>
 

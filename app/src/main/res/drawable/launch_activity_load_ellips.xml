@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring"
+    android:thickness="2dp"
+    android:useLevel="false">
+    <!--Форма: Кольцо
+    Толщина: 2dp
+    Использовать уровень: Нет (false)
+    Описание: При использовании уровня по умолчанию кольцо не будет отображаться
+    -->
+    <!--Размер
+    Высота: 35dp
+    Ширина: 35dp
+    -->
+    <size
+        android:height="35dp"
+        android:width="35dp" />
+    <!--Градиент
+    Центральный цвет: Оранжевый
+    Центер по Y: 0.17
+    Последний цвет: Оранжевый
+    Первый цвет: прозрачный
+    Тип: Подметание
+    (По кругу с чёткой границей идёт переход от начального цвета к конечному)
+    Использовать уровень: Нет (false)
+    Описание: При использовании уровня по умолчанию кольцо не будет отображаться
+    -->
+    <gradient
+        android:centerColor="@color/orange"
+        android:centerY="0.17"
+        android:endColor="@color/orange"
+        android:startColor="@color/no_color"
+        android:type="sweep"
+        android:useLevel="false" />
+</shape>
