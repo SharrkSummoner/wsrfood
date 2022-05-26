@@ -4,23 +4,11 @@
     android:fillAfter="true"
     android:interpolator="@android:anim/linear_interpolator"
     android:shareInterpolator="false">
-    <!-- Анимация: анимация прогрессбара
-        Длительность: 0,7 секунд
-        Заполнить после анимации: Да (true)
-        Интерполятор: Линейный
-        Поделиться интерполятором: Нет (false)
-        -->
-    <!--Вращение
-    От градусов: 0
-    Поворот по X: 50%
-    Поворот по Y: 50%
-    До градусов: 360
-    Повторять: бесконечно
-    -->
     <rotate
         android:fromDegrees="0"
         android:pivotX="50%"
         android:pivotY="50%"
         android:toDegrees="360"
-        android:repeatCount="infinite"/>
+        android:repeatCount="infinite">
+    </rotate>
 </set>
