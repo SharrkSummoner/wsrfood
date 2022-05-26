@@ -1,5 +1,24 @@
 <resources>
-    <string name="app_name">wsrfood</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">WSR Food</string>
+
+    <!-- Strings for On Boarding Screen -->
+
+    <!--Titles-->
+    <string name="on_boarding_screen_text1">Fastest Delivery\n24/7</string>
+    <string name="on_boarding_screen_text2"></string>
+
+    <!--Buttons-->
+    <string name="sign_in_btn">Sign In</string>Skip Authorization
+    <string name="sign_up_btn">Sign Up</string>
+    <string name="skip_btn">Skip Authorization</string>
+    <string name="login_bth">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="password">Password</string>
+    <string name="email">E-mail</string>
+    <string name="full_name">Full name</string>
+    <string name="phone">Phone number</string>
+    <string name="register_bth">Register Now</string>
+    <string name="cancel_bth">Cancel</string>
+    <string name="search_hint">Search</string>
+
 </resources>

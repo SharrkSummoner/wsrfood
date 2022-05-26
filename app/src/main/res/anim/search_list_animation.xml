@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:shareInterpolator="false" >
+    <!-- Анимация: появление поискового списка с права
+        Длительность: 0,5 секунд
+        Заполнить после анимации: Да (true)
+        Интерполятор: Ускорения и замедления
+        Поделиться интерполятором: Нет (false)
+    -->
+    <!--Шкалирование(изменение размеров)
+        Длительность: 1 секунда
+        От размера по X: 100%
+        От размера по Y: 10%
+        Поворот X: 0%
+        Поворот Y: 0%
+        До размера по X: 100%
+        До размера по Y: 100%
+        -->
+    <scale
+        android:duration="1000"
+        android:fromXScale="1.0"
+        android:fromYScale="0.1"
+        android:pivotX="0%"
+        android:pivotY="0%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+    <!--Прозрачность
+    От прозрачности: 0%
+    До прозрачности: 100%
+    -->
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+</set>

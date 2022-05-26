@@ -24,65 +24,43 @@
 
         </androidx.viewpager.widget.ViewPager>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/fast_delivery"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sign_in_btn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_sans_bold"
-                android:gravity="center"
-                android:text="Fastest Delivery\n24/7"
-                android:textSize="35sp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="7.5dp"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:background="@drawable/corner_radius_white"
+                android:fontFamily="@font/italianno"
+                android:onClick="signIn"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:visibility="invisible" />
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/sign_in_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="7.5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/corner_radius_white"
-                    android:fontFamily="@font/italianno"
-                    android:onClick="signIn"
-                    android:text="Sign In"
-                    android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textColorHighlight="#000000"
-                    android:textColorHint="#000000"
-                    android:textColorLink="#000000"
-                    android:textSize="36sp"
-                    android:visibility="invisible" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/sign_up_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="7.5dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/corner_radius_white"
-                    android:fontFamily="@font/italianno"
-                    android:onClick="signUp"
-                    android:text="Sign Up"
-                    android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textColorHighlight="#000000"
-                    android:textColorHint="#000000"
-                    android:textColorLink="#000000"
-                    android:textSize="36sp"
-                    android:visibility="invisible" />
-            </LinearLayout>
-        </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sign_up_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/corner_radius_white"
+                android:fontFamily="@font/italianno"
+                android:onClick="signUp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+        </LinearLayout>
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
